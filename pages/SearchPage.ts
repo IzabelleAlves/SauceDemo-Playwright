@@ -9,9 +9,9 @@ export class SearchPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    this.searchTitle = page.getByRole('heading', { name: 'Search Results' });
-    this.keywordMessage = page.locator('#keyword');
-    this.productGrid = page.locator('.product-grid');
-    this.productCards = this.productGrid.locator('.columns'); 
+    this.searchTitle = page.getByRole("heading", { name: "Search Results" });
+    this.keywordMessage = page.locator("#keyword");
+    this.productGrid = page.locator(".product-grid");
+    this.productCards = this.productGrid.locator(".columns");
   }
 }
