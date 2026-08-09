@@ -8,10 +8,8 @@ export class CatalogPage extends BasePage {
 
   constructor(page: Page) {
     super(page);
-    // Título da página para validar que o menu funcionou
     this.pageTitle = page.getByRole('heading', { name: 'Products' });
     
-    // A section inteira da grid que você encontrou no HTML
     this.productGrid = page.locator('.product-grid');
     
     // Cada card de produto individual (a div que tem a classe 'four columns')
